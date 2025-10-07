@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+</head>
+<body>
+    <section id="utama">
+        <picture>
+            <source media="(max-width: 600px)" srcset="nebulaorion.jpg">
+            <source srcset="nebula-rose.jpg">
+            <img src="download.jpg" alt="nebula pegasus">
+        </picture>
+    </section>
+
+    <figure>
+        <picture>
+            <source media="(max-width: 600px)" srcset="nebulaorion.jpg">
+            <source srcset="nebula-rose.jpg">
+            <img src="download.jpg" alt="nebula pegasus">
+        </picture>
+        <figcaption>
+            Gambar Nebula Pegasus, Rose, dan Orion
+        </figcaption>
+    </figure>
+
+    <section id="nebula-pegasus" style="height: 200vh">
+        <h2>nebula pegasus</h2>
+        <img src="download.jpg" alt="" width="400" height="400">
+    </section>
+
+    <section id="nebula-rose" style="height: 200vh">
+        <h2>nebula rose</h2>
+        <img src="nebula-rose.jpg" alt="" loading="lazy" width="400" height="400">
+    </section>
+
+    <section id="nebula-orion" style="height: 200vh">
+        <h2>nebula orion</h2>
+        <img src="nebulaorion.jpg" alt="" loading="lazy" width="400" height="400">
+    </section>
+
+</body>
+</html>
